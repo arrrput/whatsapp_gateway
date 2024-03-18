@@ -137,7 +137,7 @@ async function connectToWhatsApp() {
                 if(!messages[0].key.fromMe && pesanMasuk === "ping"){
                     await sock.sendMessage(noWa, {text: "Pong"},{quoted: messages[0] });
                 }else{
-                    await sock.sendMessage(noWa, {text: "Saya adalah Bot!"},{quoted: messages[0] });
+                    await sock.sendMessage(noWa, {text: "Mohon untuk tidak membalas pesan ini, nomor ini dikendalikan oleh BOT."},{quoted: messages[0] });
                 }
 			}		
 		}		
