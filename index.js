@@ -78,6 +78,7 @@ async function connectToWhatsApp() {
 		logger: log({ level: "silent" }),
 		version: [2,2323,4],
 		shouldIgnoreJid: jid => isJidBroadcast(jid),
+        markOnlineOnConnect: false,
     });
 	store.bind(sock.ev);
 	sock.multi = true
